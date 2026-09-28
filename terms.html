@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Terms &amp; Conditions | Test Smile Dental</title>
+    <meta content="The terms that apply when you use the Test Smile Dental website and services." name="description"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="assets/img/favicon.svg" rel="shortcut icon" type="image/svg+xml"/>
+    <link href="assets/img/webclip.png" rel="apple-touch-icon"/>
+    <style>
+        body{margin:0;background:#fafafa;color:#011f23;font-family:Sora,'Helvetica Neue',Arial,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;}
+        .legal-nav{display:flex;align-items:center;justify-content:space-between;padding:24px 6vw;border-bottom:1px solid #e2e2e2;}
+        .legal-nav a.back{color:#24a3b1;text-decoration:none;font-weight:500;font-size:15px;}
+        .legal-wrap{max-width:760px;margin:0 auto;padding:64px 24px 96px;}
+        .legal-wrap h1{font-size:clamp(32px,5vw,48px);font-weight:600;letter-spacing:-1px;margin:0 0 8px;}
+        .legal-wrap .updated{color:#758696;font-size:14px;margin-bottom:40px;}
+        .legal-wrap h2{font-size:22px;font-weight:600;margin:40px 0 12px;}
+        .legal-wrap p,.legal-wrap li{color:#3a4a4d;font-size:16px;}
+        .legal-wrap a{color:#24a3b1;}
+        .legal-foot{text-align:center;padding:40px 24px;border-top:1px solid #e2e2e2;color:#758696;font-size:14px;}
+    </style>
+  </head>
+<body>
+    <div class="legal-nav">
+        <a href="index.html"><img src="assets/img/lumora-logo.svg" alt="Test Smile Dental logo" height="30"/></a>
+        <a class="back" href="index.html">&larr; Back to home</a>
+    </div>
+    <main class="legal-wrap">
+        <h1>Terms &amp; Conditions</h1>
+        <p class="updated">Last updated: June 2026</p>
+        <p>Welcome to Test Smile Dental. By using this website and booking appointments through it, you agree to the following terms. Please read them carefully.</p>
+        <h2>Use of this website</h2>
+        <p>The content on this site is provided for general information about our dental services. It is not a substitute for professional medical or dental advice, diagnosis, or treatment. Always consult a qualified clinician about your specific situation.</p>
+        <h2>Appointments</h2>
+        <ul>
+            <li>Bookings made through our scheduling page are requests confirmed by our team.</li>
+            <li>Please give us at least 24 hours' notice to reschedule or cancel a visit.</li>
+            <li>Repeated no-shows may affect future booking availability.</li>
+        </ul>
+        <h2>Intellectual property</h2>
+        <p>All text, images, logos, and design elements on this site are the property of Test Smile Dental and may not be reproduced without permission.</p>
+        <h2>Limitation of liability</h2>
+        <p>Test Smile Dental is not liable for any indirect or incidental damages arising from the use of this website. Treatment outcomes vary between individuals and are discussed with you directly during your visit.</p>
+        <h2>Contact</h2>
+        <p>For any questions about these terms, contact <a href="mailto:test@example.com">test@example.com</a>.</p>
+    </main>
+    <div class="legal-foot">&copy; 2026 Test Smile Dental. All rights reserved. &middot; <a href="privacy.html" style="color:#758696;">Privacy Policy</a></div>
+
+<script>
+/* Mola image guard: any failed/empty image -> on-brand gradient SVG so nothing ever looks broken. */
+(function(){
+  function ph(label){
+    var t=(label||'Test Smile Dental').replace(/[<>&]/g,'').slice(0,22);
+    var svg='<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">'
+     +'<defs><linearGradient id="lg" x1="0" y1="0" x2="1280" y2="720" gradientUnits="userSpaceOnUse">'
+     +'<stop offset="0" stop-color="#24a3b1"/><stop offset="1" stop-color="#011f23"/></linearGradient></defs>'
+     +'<rect width="1280" height="720" fill="url(#lg)"/>'
+     +'<circle cx="640" cy="298" r="44" fill="#fff" opacity="0.9"/>'
+     +'<text x="640" y="436" fill="#fff" font-family="Sora,Arial" font-size="40" font-weight="600" text-anchor="middle" opacity="0.92">'+t+'</text></svg>';
+    return 'data:image/svg+xml;utf8,'+encodeURIComponent(svg);
+  }
+  function bind(im){
+    im.addEventListener('error',function(){ if(im.dataset.fbk)return; im.dataset.fbk='1'; im.src=ph(im.alt); });
+    if(im.complete && im.naturalWidth===0 && !im.dataset.fbk){ im.dataset.fbk='1'; im.src=ph(im.alt); }
+  }
+  document.querySelectorAll('img').forEach(bind);
+})();
+</script>
+
+<div id="appt" class="appt" hidden role="dialog" aria-modal="true" aria-labelledby="appt-title">
+  <div class="appt__backdrop" data-appt-close></div>
+  <div class="appt__card">
+    <button class="appt__x" type="button" aria-label="Close" data-appt-close>&times;</button>
+    <div class="appt__step" data-appt-step="form">
+      <h2 id="appt-title" class="appt__h">Book an appointment</h2>
+      <p class="appt__sub">Choose a day and time that suits you. Test Smile Dental will call you to confirm.</p>
+      <form id="appt-form" novalidate>
+        <div class="appt__row">
+          <label>Full name*<input name="name" autocomplete="name" required></label>
+          <label>Phone*<input name="phone" type="tel" autocomplete="tel" required></label>
+        </div>
+        <label>Email<input name="email" type="email" autocomplete="email"></label>
+        <div class="appt__row">
+          <label>Preferred date*<input name="date" type="date" required></label>
+          <label>Preferred time*
+            <select name="time" required>
+              <option value="">Select</option>
+              <option>Morning (9am to 12pm)</option>
+              <option>Afternoon (12pm to 4pm)</option>
+              <option>Evening (4pm to 7pm)</option>
+            </select>
+          </label>
+        </div>
+        <label>Reason for visit
+          <select name="treatment">
+            <option>Checkup and cleaning</option>
+            <option>Tooth pain or emergency</option>
+            <option>Teeth whitening</option>
+            <option>Braces or aligners</option>
+            <option>Implants</option>
+            <option>Root canal</option>
+            <option>Veneers or cosmetic</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" rows="2" placeholder="Anything we should know?"></textarea></label>
+        <input type="checkbox" name="botcheck" class="appt__hp" tabindex="-1" autocomplete="off">
+        <p class="appt__err" hidden></p>
+        <button class="appt__btn" type="submit">Request appointment</button>
+      </form>
+    </div>
+    <div class="appt__step" data-appt-step="done" hidden>
+      <div class="appt__tick" aria-hidden="true">&#10003;</div>
+      <h2 class="appt__h">Request received</h2>
+      <p class="appt__sub" data-appt-done-msg></p>
+      <button class="appt__btn" type="button" data-appt-close>Close</button>
+    </div>
+  </div>
+</div>
+<style>
+.appt{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;padding:16px;font-family:inherit}
+.appt[hidden]{display:none}
+.appt__backdrop{position:absolute;inset:0;background:rgba(1,31,35,.55);backdrop-filter:blur(3px)}
+.appt__card{position:relative;width:100%;max-width:520px;max-height:calc(100vh - 32px);overflow:auto;background:#fff;color:#011f23;border-radius:20px;padding:28px;box-shadow:0 24px 60px rgba(0,0,0,.25)}
+.appt__x{position:absolute;top:12px;right:14px;width:36px;height:36px;border:0;background:#f1f5f5;border-radius:50%;font-size:22px;line-height:1;cursor:pointer;color:#011f23}
+.appt__h{font-size:26px;line-height:1.2;margin:0 0 6px;font-weight:600}
+.appt__sub{margin:0 0 18px;color:#4a5b5d;font-size:15px;line-height:1.5}
+.appt form{display:flex;flex-direction:column;gap:12px}
+.appt__row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.appt label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:500;color:#23393b}
+.appt input,.appt select,.appt textarea{font:inherit;font-size:15px;padding:11px 12px;border:1px solid #d5dfe0;border-radius:10px;background:#fafcfc;color:#011f23;width:100%;box-sizing:border-box}
+.appt input:focus,.appt select:focus,.appt textarea:focus{outline:2px solid #24a3b1;outline-offset:1px;border-color:#24a3b1}
+.appt__hp{position:absolute;left:-9999px}
+.appt__btn{margin-top:4px;border:0;border-radius:999px;padding:14px 20px;background:#24a3b1;color:#fff;font:inherit;font-size:16px;font-weight:600;cursor:pointer;width:100%}
+.appt__btn[disabled]{opacity:.6;cursor:wait}
+.appt__err{margin:0;color:#b42318;font-size:14px}
+.appt__tick{width:56px;height:56px;border-radius:50%;background:#24a3b1;color:#fff;font-size:30px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+body.appt-open{overflow:hidden}
+@media (max-width:520px){.appt__row{grid-template-columns:1fr}.appt__card{padding:22px 18px}}
+</style>
+<script>
+(function(){
+  var KEY="", BIZ="Test Smile Dental", EMAIL="test@example.com";
+  var modal=document.getElementById('appt'); if(!modal) return;
+  var form=document.getElementById('appt-form'), err=modal.querySelector('.appt__err');
+  function step(n){modal.querySelectorAll('[data-appt-step]').forEach(function(s){s.hidden=s.getAttribute('data-appt-step')!==n;});}
+  function open(){
+    step('form'); err.hidden=true; modal.hidden=false; document.body.classList.add('appt-open');
+    var d=form.querySelector('[name=date]'); var t=new Date(); t.setMinutes(t.getMinutes()-t.getTimezoneOffset());
+    d.min=t.toISOString().slice(0,10);
+    setTimeout(function(){form.querySelector('[name=name]').focus();},50);
+  }
+  function close(){modal.hidden=true; document.body.classList.remove('appt-open');}
+  window.openAppointment=open;
+  document.addEventListener('click',function(e){
+    var a=e.target.closest && e.target.closest('a[href="#book"]');
+    if(a){e.preventDefault(); e.stopPropagation(); open(); return;}
+    if(e.target.closest && e.target.closest('[data-appt-close]')){e.preventDefault(); close();}
+  },true);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!modal.hidden) close();});
+  if(location.hash==='#book') open();
+
+  function send(fields, subject){
+    var data=Object.assign({access_key:KEY, subject:subject, from_name:BIZ, Clinic:BIZ, Page:location.href}, fields);
+    if(!KEY){
+      var body=Object.keys(fields).map(function(k){return k+': '+fields[k];}).join('\n');
+      location.href='mailto:'+EMAIL+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+      return Promise.resolve(true);
+    }
+    return fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
+      .then(function(r){return r.json();}).then(function(j){return !!j.success;}).catch(function(){return false;});
+  }
+  window.clinicSend=send;
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(form.botcheck.checked) return;
+    var f={Name:form.name.value.trim(),Phone:form.phone.value.trim(),Email:form.email.value.trim(),
+      'Preferred date':form.date.value,'Preferred time':form.time.value,Reason:form.treatment.value,Message:form.message.value.trim()};
+    if(!f.Name||!f.Phone||!f['Preferred date']||!f['Preferred time']){err.textContent='Please fill in your name, phone, date and time.';err.hidden=false;return;}
+    var btn=form.querySelector('button[type=submit]'); btn.disabled=true; btn.textContent='Sending...'; err.hidden=true;
+    send(f,'New appointment request: '+BIZ).then(function(ok){
+      btn.disabled=false; btn.textContent='Request appointment';
+      if(ok){
+        modal.querySelector('[data-appt-done-msg]').textContent='Thank you, '+f.Name.split(' ')[0]+'. '+BIZ+' will call you on '+f.Phone+' to confirm your appointment.';
+        form.reset(); step('done');
+      } else {
+        err.textContent='Sorry, that did not go through. Please try again or email '+EMAIL+'.'; err.hidden=false;
+      }
+    });
+  });
+
+  // Hero "Request a callback" form.
+  window.lumoraLead=function(e){
+    e.preventDefault();
+    var f=e.target, name=(f.querySelector('input[name="name"]').value||'').trim(), phone=(f.querySelector('input[name="phone"]').value||'').trim();
+    if(!name||!phone) return false;
+    var b=f.querySelector('button'); if(b){b.disabled=true;}
+    send({Name:name,Phone:phone},'Callback request: '+BIZ).then(function(ok){
+      if(b){b.disabled=false;}
+      var card=f.closest('.lead-form_card');
+      if(ok&&card){
+        f.style.display='none';
+        var head=card.querySelector('.lead-form_head'); if(head) head.style.display='none';
+        var done=card.querySelector('.lead-form_success'); if(done) done.style.display='block';
+      } else if(!ok){ alert('Sorry, that did not go through. Please email '+EMAIL+'.'); }
+    });
+    return false;
+  };
+})();
+</script>
+
+</body>
+</html>
